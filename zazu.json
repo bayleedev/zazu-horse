@@ -10,16 +10,21 @@
         "keyword": "horse",
         "title": "Play a horse sound",
         "icon": "fa-play",
-        "connections": [
-          "Play"
-        ]
+        "connections": ["Play"]
       }
     ],
     "output": [
       {
         "id": "Play",
         "type": "PlaySound",
-        "file": "horse.mp3"
+        "file": "horse.mp3",
+        "connections": ["Done"]
+      },
+      {
+        "id": "Done",
+        "type": "SendNotification",
+        "title": "The horse left",
+        "message": "]:"
       }
     ]
   }
