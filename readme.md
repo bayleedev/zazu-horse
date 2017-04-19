@@ -1,5 +1,9 @@
-## Zazu Template
+## Zazu Horse
 
-[![Build Status](https://travis-ci.org/tinytacoteam/zazu-template.svg?branch=master)](https://travis-ci.org/tinytacoteam/zazu-template)
+Play a horse sound in zazu
 
-Zazu Template for starting your own plugin.
+### Usage
+
+> horse
+
+Plays a horse sound

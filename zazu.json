@@ -5,40 +5,21 @@
   "blocks": {
     "input": [
       {
-        "id": "template",
+        "id": "play-input",
         "type": "Keyword",
-        "keyword": "template",
-        "title": "Zazu Template",
-        "subtitle": "Goto Zazu Template GitHub Repo",
-        "icon": "fa-files-o",
+        "keyword": "horse",
+        "title": "Play a horse sound",
+        "icon": "fa-play",
         "connections": [
-          "GoHome"
+          "Play"
         ]
-      },
-      {
-        "id": "hello",
-        "type": "Keyword",
-        "keyword": "hello",
-        "title": "Hello!",
-        "subtitle": "Please type your name!",
-        "icon": "fa-hand-spock-o",
-        "connections": ["GoHome"]
-      },
-      {
-        "id": "hello-name",
-        "type": "PrefixScript",
-        "prefix": "hello",
-        "space": true,
-        "args": "Required",
-        "script": "src/hello.js",
-        "connections": ["GoHome"]
       }
     ],
     "output": [
       {
-        "id": "GoHome",
-        "type": "OpenInBrowser",
-        "url": "https://github.com/tinytacoteam/zazu-template"
+        "id": "Play",
+        "type": "PlaySound",
+        "file": "horse.mp3"
       }
     ]
   }
